@@ -216,11 +216,17 @@ The integration of CAM into our project not only enhances the interpretability o
 ## Setting Up the Environment
 To run the notebooks in this repository, you can create a Conda environment with all the necessary dependencies using the provided **malaria_detection_env.yml** file. Follow these steps:
 
-1. Ensure you have [Anaconda](https://www.anaconda.com/products/individual) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed.
+1. make sure you have vs code and jupyter notebook extension installed
 2. Clone or download this repository to your local machine.
 3. Navigate to the repository directory in your terminal.
-4. Run `conda env create -f malaria_detection_env.yml` to create the environment.
-5. Once the environment is created, activate it with `conda activate malaria_detection_env.yml`.
+4. edit the paths to the dataset and models where ever necessary
+5. Run `python3 -m streamlit run app.py` in the bash terminal to load up the streamlit.
+6. go to the given url.
+
+## USE OF THE MODEL
+  - Single Cell Classification : upload a single image of the blood cell to identify the parasitic region and classfy it.
+  - Stage Prediction : go to the stage prediction folder and then select all the images in the patient folder. the stage of the pstient will be predicted(Initial, Intermediate, Advanced Stage).
+  
 
 ## Conclusion and Future Work
 The model's strong performance underscores its potential as a diagnostic aid for rapid malaria detection. The project showcases the efficacy of CNNs in medical image analysis and their potential to support healthcare initiatives.
@@ -231,11 +237,6 @@ Future enhancements may include:
 - Investigating transfer learning approaches for performance improvement.
 
 
-## Acknowledgments
-- A special thanks to **Dr. Ehsan (Sam) Gharib-Nezhad** and **Dr. Amirhossein Kardoost** for their insightful feedback and suggestions that significantly enhanced the quality of this project. Their expertise and thoughtful reviews were tremendously helpful. You can find more about their works on [EhsanGharibNezhad](https://github.com/EhsanGharibNezhad) and [Amir_kd](https://github.com/Amirhk-dev).
+## Dataset
 - Data provided by [Kaggle's Malaria Cell Images Dataset](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria).
-- World Health Organization (WHO) for malaria statistics.
-
-## References
-1. [Our World in Data - Malaria](https://ourworldindata.org/malaria)
 
